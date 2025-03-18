@@ -1,0 +1,143 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-text {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.animated-logo {
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.container {
+  text-align: center;
+  padding: 50px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #333;
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: #ff6347;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+/* Navbar */
+.navbar {
+  background: #222;
+  color: white;
+  padding: 15px;
+  font-size: 24px;
+}
+
+/* Hero Section */
+.hero {
+  background: url("https://via.placeholder.com/1200x400") no-repeat center/cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  font-size: 2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Dress Collection */
+.collection {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+.dress-card {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.dress-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
